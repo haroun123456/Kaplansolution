@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaplan Solutions | Contact</title>
+    <script src="https://kit.fontawesome.com/db14096f7b.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="WhatsApp Image 2022-08-27 at 22.45.15.jpeg" type="image/x-icon">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+  background-color: rgb(70, 69, 69);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+    body{
+          background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(contact-us-background-image-4.jpg);
+          height: 100vh;
+          width: 100%;
+          background-size: cover;
+          background-repeat: repeat;
+          background-position: center;
+          position: relative;
+         } 
+         a{
+      color: #000;
+    }
+         
+   
+    .wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+.wrapper li a {
+  outline: 1px solid rgb(0, 0, 0);
+  display: block;
+  padding: 13px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}    
+
+.wrapper li a:hover{
+  background-color: #f4f4f4;
+}
+
+.wrapper .logo {
+  color: #b77b0d;
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.wrapper .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  }
+
+.wrapper .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+    .wrapper .menu-icon .nav-icon {
+  background: rgb(0, 0, 0);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition:background .2s ease-out;
+  width: 18px;
+}
+
+    .wrapper .menu-icon .nav-icon:before{
+      background: #000;
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      top: 5px;    
+    }
+    .wrapper .menu-icon .nav-icon:after{
+      background: #000;
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      top: -5px;    
+    }
+    .wrapper .menu-btn{
+      display: none;
+    }
+    .wrapper .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.wrapper .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.wrapper .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.wrapper .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+      
+
+.contact-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form h2{ 
+    text-align: center;
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+form input, form textarea{
+  border: 0;
+  margin: 8px 0;
+  padding: 20px;
+  outline: 0.1px solid black;
+  background: #ebebeb;
+  font-size: 16px;
+  border-radius: 17px;
+}
+form button{
+    padding: 15px;
+    background: #ff5e6c;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+form button:hover{
+    background: #c92331;
+    transition: 0.5s;
+}
+
+
+.social-media{
+      font-size: 35px;
+      text-align: center;
+      margin-top: 590px;
+      position: absolute;
+    } 
+    .social-media .instagram{
+      color: rgb(219, 41, 180);
+      text-decoration: none;
+      }
+    .social-media .facebook{
+      color: 	#4267B2;
+      text-decoration: none;
+    }
+  
+    .social-media .location{
+      color: #20b86f;
+      text-decoration: none;
+    }
+    .social-media .telegram{
+      color: rgb(29, 161, 242);
+      text-decoration: none;
+    }
+
+    .instagram:hover{
+      color: rgb(155, 15, 125);
+      transition: 0.5s;
+    }
+    .facebook:hover{
+      color: #254c99;
+      transition: 0.5s;
+    }
+    .location:hover{
+      color: #1a7448;
+      transition: 0.5s;
+    }
+    .telegram:hover{
+      color: rgb(1, 107, 160);
+      transition: 0.5s;
+    }
+
+    @media only screen and (min-width: 768px) {
+
+        .wrapper .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  }
+
+.wrapper .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+    .wrapper .menu-icon .nav-icon {
+  background: rgb(0, 0, 0);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition:background .2s ease-out;
+  width: 18px;
+}
+
+    .wrapper .menu-icon .nav-icon:before{
+      background: #000;
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      top: 5px;    
+    }
+    .wrapper .menu-icon .nav-icon:after{
+      background: #000;
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      top: -5px;    
+    }
+    .wrapper .menu-btn{
+      display: none;
+    }
+    .wrapper .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.wrapper .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.wrapper .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.wrapper .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+      
+
+.contact-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 620px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+form h2{ 
+    text-align: center;
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+form input, form textarea{
+  border: 0;
+  margin: 8px 0;
+  padding: 20px;
+  outline: 0.1px solid black;
+  background: #ebebeb;
+  font-size: 16px;
+  border-radius: 17px;
+}
+form button{
+    padding: 15px;
+    background: #ff5e6c;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+form button:hover{
+    background: #c92331;
+    transition: 0.5s;
+}
+
+.social-media{
+      font-size: 50px;
+      text-align: center;
+      margin-top: 640px;
+      position: absolute;
+    } 
+
+    }
+
+
+              @media only screen and (min-width: 1040px) {
+
+
+
+
+                .contact-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}           
+
+     .social-media{
+      font-size: 46px;
+      margin-top: 665px;
+    }
+
+        .wrapper li {
+    float: left;
+  }
+  .wrapper li a {
+    padding: 20px 30px;
+  }
+  
+  .wrapper .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .wrapper .menu-icon {
+    display: none;
+  }     
+  .wrapper li a:hover{
+  transition: 0.7s;
+  background-color: #b6b3b3;
+}
+}
+
+</style>
+<body>
+    <div class="wrapper">
+        <a href="" class="logo">Kaplan Solutions</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+           <ul class="menu">
+                <li><a href="index.html"><b>HOME</b></a></li>
+               <li><a href="about.html"><b>ABOUT</b></a></li> 
+               <li><a href="services.html"><b>SEVICES</b></a></li>
+               <li><a href="contact.html"><b>CONTACT</b></a></li> 
+           </ul>   
+        </div> 
+    <div class="contact-box">
+     <form
+  action="https://formspree.io/f/xqkjzezw"
+  method="POST"
+> 
+
+        <h2>Contact Us</h2>
+        <input type="text" name="name" placeholder="* Your Name" required>
+        <input type="email" name="email" placeholder="* Your Email" required>
+        <input type="text" name="phone" placeholder="Phone number">
+      <textarea name="message" rows="4" placeholder="* Your message" required></textarea> 
+        <button type="submit">Send Message</button>   
+     </form>   
+   
+     <div class="social-media">
+        <a class="telegram" href="https://t.me/kaplan_solutions" target="_blank">
+        <i class="fa-brands fa-telegram"></i></a>
+         <a class="facebook" href="https://www.facebook.com/kaplan.solutions/" target="_blank">
+          <i class="fa-brands fa-facebook"></i></a>
+        <a class="instagram" href="https://www.instagram.com/kaplan.solutions/" target="_blank">
+          <i class="fa-brands fa-instagram"></i></a>
+          <a class="location" href="https://goo.gl/maps/Hrf7D9UrUerRGzwn6" target="_blank">
+            <i class="fa-solid fa-location-dot"></i></a>
+          </div>
+    </div>
+    
+    
+</body>
+
+
+</html>

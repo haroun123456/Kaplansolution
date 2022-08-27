@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Kaplan Solutions | Sevices</title>
+       <script src="https://kit.fontawesome.com/db14096f7b.js" crossorigin="anonymous"></script>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Merriweather:wght@700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
+
+<link rel="icon" href="WhatsApp Image 2022-08-27 at 22.45.15.jpeg" type="image/x-icon">
+<style>
+
+*{
+      margin: 0;  
+      padding: 0;
+      font-family: sans-serif;
+     }
+
+     body{
+      background-color: #0000001A;
+     }
+       
+     .wrapper {
+  background-color: rgb(70, 69, 69);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+    a{
+      color: #000;
+    }
+
+
+    .wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+.wrapper li a {
+  outline: 1px solid rgb(0, 0, 0);
+  display: block;
+  padding: 13px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}    
+
+.wrapper li a:hover{
+  background-color: #f4f4f4;
+}
+
+.wrapper .logo {
+  color: #b77b0d;
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.wrapper .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  }
+
+.wrapper .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+    .wrapper .menu-icon .nav-icon {
+  background: rgb(0, 0, 0);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition:background .2s ease-out;
+  width: 18px;
+}
+
+    .wrapper .menu-icon .nav-icon:before{
+      background: #000;
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      top: 5px;    
+    }
+    .wrapper .menu-icon .nav-icon:after{
+      background: #000;
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      top: -5px;    
+    }
+    .wrapper .menu-btn{
+      display: none;
+    }
+    .wrapper .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.wrapper .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.wrapper .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.wrapper .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+.welcome-text h1{
+  font-family: 'Oswald', sans-serif;
+  padding-top: 80px;
+  text-align: center;
+}
+
+
+
+.text1-photo{
+  padding-top: 30px;
+    width: 100%;
+    display: flex;
+}
+.text1{
+  border: 3px solid rgb(238, 193, 46);
+  text-align: center;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+.text1 h2{
+  font-family: 'Merriweather', serif;
+}
+.text1 p{
+  font-family: 'Raleway', sans-serif;
+
+}
+.interpreting img{
+  border: 3px solid rgb(59, 208, 235);
+  width: 187.5px;
+  height: 98%;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+
+
+.text2-photo{
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+}
+.text2{
+  border: 3px solid rgb(238, 193, 46);
+  text-align: center;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+.text2 h2{
+  font-family: 'Merriweather', serif;
+}
+.text2 p{
+  font-family: 'Raleway', sans-serif;
+}
+.voice-over img{
+  border: 3px solid rgb(59, 208, 235);
+  width: 187.5px;
+  height: 98%;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+
+
+.text3-photo{
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+}
+.text3{
+  border: 2px solid rgb(238, 193, 46);
+  text-align: center;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+.text3 h2{
+  font-family: 'Merriweather', serif;
+}
+.text3 p{
+  font-family: 'Raleway', sans-serif;
+
+}
+.Proofreading img{
+  border: 2px solid rgb(59, 208, 235);
+  width: 187.5px;
+  height: 98%;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+
+
+.text4-photo{
+    padding-top: 40px;  
+    width: 100%;
+    display: flex;
+}
+.text4{
+  border: 3px solid rgb(238, 193, 46);
+  text-align: center;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+.text4 h1{
+  font-family: 'Merriweather', serif;
+}
+.text4 p{
+  font-family: 'Raleway', sans-serif;
+}
+.Subtitling img{
+  border: 3px solid rgb(59, 208, 235);
+  width: 187.5px;
+  height: 98.5%;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+
+
+.text5-photo{
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+}
+.text5{
+  border: 3px solid rgb(238, 193, 46);
+  text-align: center;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+.text5 h1{
+  font-family: 'Merriweather', serif;
+}
+.text5 p{
+  font-family: 'Raleway', sans-serif;
+}
+.Dubbing img{
+  border: 3px solid rgb(59, 208, 235);
+  width: 187.5px;
+  height: 98.5%;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+
+
+.text6-photo{
+    padding-top: 40px; 
+    width: 100%;
+    display: flex;
+}
+.text6{
+  border: 3px solid rgb(238, 193, 46);
+  text-align: center;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+.text6 h1{
+  font-family: 'Merriweather', serif;
+}
+.text6 p{
+  font-family: 'Raleway', sans-serif;
+}
+.Transcription img{
+  border: 3px solid rgb(59, 208, 235);
+  width: 187.5px;
+  height: 98.5%;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+
+
+.text7-photo{
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+}
+.text7{
+  border: 3px solid rgb(238, 193, 46);
+  text-align: center;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+.text7 h1{
+  font-family: 'Merriweather', serif;
+}
+.text7 p{
+  font-family: 'Raleway', sans-serif;
+}
+.Content-writing img{
+  border: 3px solid rgb(59, 208, 235);
+  width: 187.5px;
+  height: 98%;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+
+
+.text8-photo{
+    padding-top: 40px; 
+    width: 100%;
+    display: flex;
+}
+.text8{
+  border: 3px solid rgb(238, 193, 46);
+  text-align: center;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+}
+.text8 h1{
+  font-family: 'Merriweather', serif;
+}
+.text8 p{
+  font-family: 'Raleway', sans-serif;
+}
+.web-development img{
+  border: 3px solid rgb(59, 208, 235);
+  width: 187.5px;
+  height: 98.5%;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.9);
+} 
+
+
+
+
+
+.social-media{
+      font-size: 35px;
+      margin-top: 50px;
+      text-align: center;  
+      margin-bottom: 50px;    
+    } 
+    .social-media .instagram{
+      color: rgb(219, 41, 180);
+      text-decoration: none;
+      }
+    .social-media .facebook{
+      color: 	#4267B2;
+      text-decoration: none;
+    }
+  
+    .social-media .location{
+      color: #20b86f;
+      text-decoration: none;
+    }
+    .social-media .telegram{
+      color: rgb(29, 161, 242);
+      text-decoration: none;
+    }
+
+    .instagram:hover{
+      color: rgb(155, 15, 125);
+      transition: 0.5s;
+    }
+    .facebook:hover{
+      color: #254c99;
+      transition: 0.5s;
+    }
+    .location:hover{
+      color: #1a7448;
+      transition: 0.5s;
+    }
+    .telegram:hover{
+      color: rgb(1, 107, 160);
+      transition: 0.5s;
+    }
+
+
+
+  
+    @media only screen and (min-width: 768px) {
+
+      .welcome-text{
+       font-size: 20px;
+      }
+
+      .text1{
+        padding-top: 60px;
+      }
+      .interpreting img{
+  width: 380px;
+        }
+
+       .text2{
+        padding-top: 120px;
+       } 
+       .voice-over img{
+  width: 380px;
+        }
+
+        .text3{
+          padding-top: 63px;
+        }
+        .Proofreading img{
+  width: 380px;
+        }
+        
+        .text4{
+          padding-top: 60px;
+        }
+       .Subtitling img{
+  width: 380px;
+        }
+        
+
+        .text6{
+          padding-top: 60px;
+        }
+        .Transcription img{
+  width: 380px;
+        }
+
+        .text7{
+          padding-top: 25px;
+        }
+        .Content-writing img{
+  width: 380px;
+        }
+
+        .text8{
+          padding-top: 53px;
+        }
+        .web-development img{
+  width: 380px;
+        }
+        
+        .social-media{
+          margin-bottom: 20px;
+          margin-top: 20px;
+          font-size: 50px;
+        }
+    
+    }
+
+
+
+
+
+    @media only screen and (min-width: 1040px) {
+
+      .wrapper{
+              width: 100%;
+             }
+             .wrapper li {
+    float: left;
+  }
+  .wrapper li a {
+    padding: 20px 30px;
+  }
+  
+  .wrapper .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .wrapper .menu-icon {
+    display: none;
+  }  
+  
+  .welcome-text{
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .text1-photo{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+}
+.text1 h2{
+  font-size: 40px;
+}
+.text1 p{
+  padding-top: 15px;
+  font-size: 20px;
+}
+.text1{
+  border: #0000001A;
+  padding-top: 113px;
+  text-align: center;
+  box-shadow: 0px 0px 0px 0 #0000001A;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+.interpreting img{
+  width: 670px;
+  height: 98%;
+}
+
+
+
+.text2-photo{
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+}
+.text2{
+  border: #0000001A;
+  padding-top: 245px;
+  text-align: center;
+  box-shadow: 0px 0px 0px 0 #0000001A;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+.text2 h2{
+  font-size: 40px;
+}
+.text2 p{
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.voice-over img{
+  width: 670px;
+  height: 96%;
+}
+
+
+
+.text3-photo{
+    padding-top: 25px;
+    width: 100%;
+    display: flex;
+}
+.text3{
+  border: #0000001A;
+  padding-top: 128px;
+  text-align: center;
+  box-shadow: 0px 0px 0px 0 #0000001A;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+.text3 h2{
+  font-size: 40px;
+}
+.text3 p{
+  padding-top: 15px;
+  font-size: 20px;
+}
+.Proofreading img{
+  width: 670px;
+  height: 98%;
+}
+
+
+
+.text4-photo{
+    padding-top: 25px;  
+    width: 100%;
+    display: flex;
+}
+.text4{
+  border: #0000001A;
+  padding-top: 144px;
+  text-align: center;
+  box-shadow: 0px 0px 0px 0 #0000001A;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+.text4 h2{
+  font-size: 40px;
+}
+.text4 p{
+  padding-top: 15px;
+  font-size: 20px;
+}
+.Subtitling img{
+  width: 670px;
+  height: 98.5%;
+}
+ 
+
+
+.text6-photo{
+    padding-top: 25px; 
+    width: 100%;
+    display: flex;
+}
+.text6{
+  border: #0000001A;
+  padding-top: 138px;
+  text-align: center;
+  box-shadow: 0px 0px 0px 0 #0000001A;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+.text6 h2{
+  font-size: 40px;
+}
+.text6 p{
+  padding-top: 15px;
+  font-size: 20px;
+}
+.Transcription img{
+  width: 660px;
+  height: 98.5%;
+}
+
+
+
+.text7-photo{
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+}
+.text7{
+  border: #0000001A;
+  padding-top: 95px;
+  text-align: center;
+  box-shadow: 0px 0px 0px 0 #0000001A;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+.text7 h2{
+  font-size: 40px;
+}
+.text7 p{
+  padding-top: 15px;
+  font-size: 20px;
+}
+.Content-writing img{
+  width: 100%;
+  height: 98%;
+}
+
+
+.text8-photo{
+    padding-top: 40px;
+    display: flex;
+}
+.text8{
+  border: #0000001A;
+  padding-top: 140px;
+  text-align: center;
+  box-shadow: 0px 0px 0px 0 #0000001A;
+  padding-right: 100px;
+  padding-left: 128px;
+}
+.text8 h2{
+  font-size: 40px;
+}
+.text8 p{
+  padding-top: 15px;
+  font-size: 20px;
+}
+.web-development img{
+  width: 660px;
+  height: 98.5%;
+}
+
+    }
+
+</style>
+</head>
+<body> 
+     
+    <div class="wrapper">
+      <a href="" class="logo">Kaplan Solutions</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn">
+      <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+         <ul class="menu">
+              <li><a href="index.html"><b>HOME</b></a></li>
+             <li><a href="about.html"><b>ABOUT</b></a></li> 
+             <li><a href="services.html"><b>SEVICES</b></a></li>
+             <li><a href="contact.html"><b>CONTACT</b></a></li> 
+         </ul>   
+      </div> 
+           <div class="welcome-text">
+            <h1>Our services</h1>
+           </div>
+
+
+           <div class="text1-photo">
+            <div class="text1">
+              <h2><u>Interpreting</u></h2>
+            <p>We offer flexible interpreting services to help you break communication barriers wherever you are. Our qualified interpreters are adept at navigating conversations in almost any sector.</p>
+          </div>
+          <div class="interpreting">
+        <img src="Face-to-face-interpreter-01-1024x683.jpg">
+      </div>
+        </div>
+
+        
+
+        <div class="text2-photo">
+          <div class="voice-over">
+            <img src="Voice-over-rates-card-voice-talent-costs-fees-e1602054814305.jpg">
+           </div>
+            <div class="text2">
+              <h2><u>Voice-over</u></h2>
+          <p>Our highly skilled professional voice-over artists are carefully selected in order to help you transform your project for an international audience
+            </p> 
+             </div>
+            </div>
+
+            
+
+            <div class="text3-photo">
+      <div class="text3">
+        <h2><u>Proofreading</u></h2>
+        <p>Our proofreading services shape your content so that they are clear, concise and accurate.</p>
+        </div>
+        <div class="Proofreading">
+          <img src="The-Best-Free-Paid-Proofreading-Editing-Software-700x406.jpg">
+        </div>
+      </div>
+
+      
+
+        <div class="text4-photo">
+          <div class="Subtitling">
+            <img src="Subtitling.jpeg">
+          </div>
+          <div class="text4">
+          <h2><u>Subtitling</u></h2>
+          <p>Do you need to reach audiences all around the world?<br>
+            We have the solution. We deliver the highest-quality subtitles performed by native translators in order to give every viewer the experience they deserve. </p>
+        </div>
+      </div>
+
+      
+
+        <div class="text6-photo">
+          <div class="text6">
+          <h2><u>Transcription</u></h2>
+          <p> The process of transcribing an audio or video file can be tedious and time-consuming. Our teams are here to make your life easier by transforming your recorded files, producing highly accurate transcripts.</p>
+        </div>
+        <div class="Transcription">
+          <img src="Transcription-min.jpg">
+        </div>
+      </div>
+
+      
+
+        <div class="text7-photo">
+          <div class="Content-writing">
+            <img src="content-writing-4.jpg">
+          </div>        
+          <div class="text7">
+          <h2><u>Content writing</u></h2>
+          <p>We provide flexible content solutions to meet your unique needs :<br>
+            Blog post<br>
+             product description<br>
+            CEO content<br>
+            Article writing<br>
+            Social media post
+            </p>
+        </div>
+      </div>
+
+
+
+      <div class="text8-photo">
+        <div class="text8">
+        <h2><u>Web Design and Development</u></h2>
+        <p>Do you want a website that looks modern and captures your brand identity? Our web design and development team will work with you to figure out your needs and desires so you get the website you always wanted.         
+        </p>
+      </div>
+      <div class="web-development">
+      <img src="learn-web-development.png">
+    </div>
+    </div>
+
+
+          <div class="social-media">
+            <a class="telegram" href="https://t.me/kaplan_solutions" target="_blank">
+            <i class="fa-brands fa-telegram"></i></a>
+             <a class="facebook" href="https://www.facebook.com/kaplan.solutions/" target="_blank">
+              <i class="fa-brands fa-facebook"></i></a>
+            <a class="instagram" href="https://www.instagram.com/kaplan.solutions/" target="_blank">
+              <i class="fa-brands fa-instagram"></i></a>
+              <a class="location" href="https://goo.gl/maps/Hrf7D9UrUerRGzwn6" target="_blank">
+                <i class="fa-solid fa-location-dot"></i></a>
+              </div>
+
+</body>
+
+
+
+</html>
