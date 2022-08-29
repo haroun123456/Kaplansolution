@@ -29,6 +29,243 @@
           background-repeat: repeat;
           background-position: center;
           position: relative;
+         }  
+         
+         .page{
+    text-align: center
+  }
+   
+    .vision-logo{
+      font-size: 37px;
+      padding-top: 15px;
+      color: #b77b0d;
+    }
+    
+    .vision1{  
+      padding-top: 0px;
+      color: rgb(59, 208, 235);
+      font-size: 13px;
+      }
+    .vision2{
+      font-size: 15px;
+      color: #dbdada;
+  }
+    
+    .about-logo{
+      font-size: 37px;
+      padding-top: 17px;
+      color: #b77b0d;
+    }
+    .about1{  
+      padding-top: 0;
+      color: rgb(59, 208, 235);
+      font-size: 13px;
+      }
+    .about2{
+      font-size: 15px;
+      color: #dbdada;
+  }
+
+    .social-media{
+      font-size: 35px;
+      margin-top: 60px;
+    } 
+    .social-media .instagram{
+      color: rgb(219, 41, 180);
+      text-decoration: none;
+      }
+    .social-media .facebook{
+      color: 	#4267B2;
+      text-decoration: none;
+    } 
+    .social-media .location{
+      color: #20b86f;
+      text-decoration: none;
+    }
+    .social-media .telegram{
+      color: rgb(29, 161, 242);
+      text-decoration: none;
+    }
+
+    .instagram:hover{
+      color: rgb(155, 15, 125);
+      transition: 0.5s;
+    }
+    .facebook:hover{
+      color: #254c99;
+      transition: 0.5s;
+    }
+    .location:hover{
+      color: #1a7448;
+      transition: 0.5s;
+    }
+    .telegram:hover{
+      color: rgb(1, 107, 160);
+      transition: 0.5s;
+    }
+
+    .logo img{
+      width: 150px;
+      padding-top: 58px;
+    }
+    a{
+      color: #000;
+    }
+
+
+    .wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+.wrapper li a {
+  outline: 1px solid rgb(0, 0, 0);
+  display: block;
+  padding: 13px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}    
+
+.wrapper li a:hover{
+  background-color: #f4f4f4;
+}
+
+.wrapper .logo {
+  color: #b77b0d;
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.wrapper .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  }
+
+.wrapper .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+    .wrapper .menu-icon .nav-icon {
+  background: rgb(0, 0, 0);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition:background .2s ease-out;
+  width: 18px;
+}
+
+    .wrapper .menu-icon .nav-icon:before{
+      background: #000;
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      top: 5px;    
+    }
+    .wrapper .menu-icon .nav-icon:after{
+      background: #000;
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      top: -5px;    
+    }
+    .wrapper .menu-btn{
+      display: none;
+    }
+    .wrapper .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.wrapper .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.wrapper .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.wrapper .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+@media only screen and (min-width: 768px) {
+
+.vision-logo{
+      font-size: 60px;
+      color: #b77b0d;
+    }
+    
+    .vision1{  
+      padding-top: 0px;
+      color: rgb(59, 208, 235);
+      font-size: 26px;
+      }
+    .vision2{
+      font-size: 28px;
+      color: #dbdada;
+  }
+    
+    .about-logo{
+      font-size: 60px;
+      padding-top: 17px;
+      color: #b77b0d;
+    }
+    .about1{  
+      padding-top: 0;
+      color: rgb(59, 208, 235);
+      font-size: 26px;
+      }
+    .about2{
+      font-size: 28px;
+      color: #dbdada;
+  } 
+  .logo img{
+      width: 256px;
+      padding-top: 64px;
+    } 
+  .social-media{
+      font-size: 50px;
+      margin-top: 70px;
+    }                            
+} 
+
+
+@media only screen and (min-width: 1040px) {
+      
+    *{
+      margin: 0;  
+      padding: 0;
+      font-family: sans-serif;;
+     }
+       
+     .wrapper {
+  background-color: rgb(70, 69, 69);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+     body{
+          background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(isolutions-slider-banner.jpg);
+          height: 100vh;
+          width: 100%;
+          background-size: cover;
+          background-repeat: repeat;
+          background-position: center;
+          position: relative;
          }        
    
     .vision-logo{
@@ -246,14 +483,7 @@
       text-align: center;
       color: #dbdada;
   } 
-  .logo img{
-      width: 256px;
-      text-align: center;
-      padding-top: 64px;
-      position: absolute;
-      padding-left: 33%;
-      padding-right: 33%;
-    } 
+  
   .social-media{
       font-size: 50px;
       margin-top: 70px;
@@ -266,7 +496,7 @@
               width: 100%;
              }
      body{
-          background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(isolutions-slider-banner.jpg);
+          background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(isolutions-slider-banner.jpg);
           height: 100vh;
           width: 100%;
           background-size: cover;
@@ -328,9 +558,9 @@
   } 
         
   .logo img{
+                 display: block;
                  width: 300px;
-                 float: left;
-                 padding-left: 0%;
+                 padding-left: 1%;
                  padding-top: 4%;
                 } 
                 
@@ -344,6 +574,9 @@
   transition: 0.7s;
   background-color: #b6b3b3;
 }
+  
+    }
+    
   
     }
     
@@ -362,6 +595,9 @@
              <li><a href="contact.html"><b>CONTACT</b></a></li> 
          </ul>   
       </div> 
+
+      <div class="page">
+
       <div class="logo">
         <img src="Nouveau projet (2).png" alt="logo"> 
       </div>
@@ -406,7 +642,7 @@
             <i class="fa-solid fa-location-dot"></i></a>
               </div>
 
-
+            </div>
 
 
 </body>
